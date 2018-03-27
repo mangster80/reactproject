@@ -13,6 +13,9 @@ import {
     Jumbotron,
     Button
 } from 'reactstrap';
+// import { BrowserRouter, Route } from 'react-router-dom';
+// import Login from './Login'
+
 import images from './images';
 let {lion, indexPhoto} = images;
 
@@ -38,13 +41,10 @@ class App extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/Home.js">Home</NavLink>
+                <NavLink href="/Home">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/Components/Login.js" className="text-danger font-weight-bold">Log In</NavLink>
+                <NavLink href="/Classes" className="text-danger font-weight-bold">Log In</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
