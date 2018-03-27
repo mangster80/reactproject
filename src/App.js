@@ -34,7 +34,7 @@ class App extends Component {
         return (
             <div>
                 <Navbar color="inverse" light expand="md">
-                    <NavbarBrand href="/"><img height="150" width="150" src={lion}/></NavbarBrand>
+                    <NavbarBrand href="/"><img height="150" width="150" src={lion} alt="logo"/></NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
@@ -54,7 +54,7 @@ class App extends Component {
                     <Container>
                         <Row>
                             <Col>
-                                <img width="100%" src={indexPhoto}/>
+                                <img width="100%" alt="breakdance" src={indexPhoto}/>
                                 <p className="d-flex justify-content-center">
                                     <Button
                                         tag="a"
